@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  margin: 6rem;
+}
+
+.signup--heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 60rem;
+}
+
+.signup--heading h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.signup--heading p {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.signup--account-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.signup--second-heading {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 10px 2px rgba(63, 61, 74, 0.3);
+}
+
+.signup--second-heading span {
+  font-weight: 600;
+  margin-right: 0.6rem;
+}
+
+.signup--account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.signup--input-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.signup--error-icon {
+  display: none;
+  position: absolute;
+  right: 2.4rem;
+  top: 1.3rem;
+  /* margin-left: auto;
+  margin-right: 2rem; */
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.signup--empy-error {
+  display: none;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+}
+
+.signup--account-info input {
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 6px;
+  padding: 1.6rem 3rem;
+}
+
+.signup--account-info input:focus {
+  outline: none !important;
+  caret-color: hsl(248, 32%, 49%);
+  border-color: hsl(248, 32%, 49%);
+  color: hsl(249, 10%, 26%);
+}
+
+.signup--btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 4px 1px 1px hsl(154, 57%, 46%);
+  transition: 0.2s all;
+}
+
+.signup--btn:hover {
+  background-color: rgba(56, 204, 140, 0.7);
+  box-shadow: 0 4px 1px 1px rgba(51, 184, 126, 0.7);
+}
+
+.signup--terms {
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: hsl(246, 25%, 77%);
+}
+
+.signup--terms span {
+  display: inline-block;
+  cursor: pointer;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    height: auto;
+  }
+
+  .signup--container {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(2, 1fr); */
+  }
+
+  .signup--heading h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .signup--heading p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .signup--account-info {
+    padding: 2rem;
+  }
+
+  .signup--terms {
+    text-align: center;
+  }
+
+  .signup--btn {
+    font-size: 1.6rem;
+    padding: 1.6rem 0;
+  }
+}
